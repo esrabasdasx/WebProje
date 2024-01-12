@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müzik Türleri</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <style>
+        body {
+            background-image: url(img/wallpaper.jpg);   
+        }
+        .bg-renk{
+            background-color: rgb(170, 38, 38);
+        }
+        .bg-renk2{
+            background-color: rgb(92, 20, 20);
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="col-12 sticky-top">
+
+        <nav class="navbar navbar-expand-sm bg-renk justify-content-center sticky-top">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white fs-4 link-light" href="index.html">Ana Sayfa</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white fs-4" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Türler</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="turler/pop.html">Pop</a></li>
+                        <li><a class="dropdown-item" href="turler/hiphop.html">Hiphop</a></li>
+                        <li><a class="dropdown-item" href="turler/jaz.html">Jaz</a></li>
+                        <li><a class="dropdown-item" href="turler/RnB.html">R&B</a></li>
+                        <li><a class="dropdown-item" href="turler/blues.html">Blues</a></li>
+                        <li><a class="dropdown-item" href="turler/country.html">Country</a></li>
+                        <li><a class="dropdown-item" href="turler/rock.html">Rock</a></li>
+                        <li><a class="dropdown-item" href="turler/metal.html">Metal</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+
+
+    <div class="col-6 mx-auto mt-4">
+        <!-- Video İframe -->
+        <iframe id="videoIframe" width="100%" height="450" src="https://www.youtube.com/embed/l5Y7fyeORRE?si=LFcNOnea4wgsOCG7" frameborder="0"
+            allowfullscreen></iframe>
+    </div>
+
+    <br>
+
+
+    <form action="">
+
+        <div class="col-5 mx-auto">
+            <select id="turSec" class="form-select bg-danger text-white" aria-label="Default select example">
+                <option selected value="pop">Pop</option>
+                <option value="hiphop">Hiphop</option>
+                <option value="jaz">Jaz</option>
+                <option value="rnb">R&B</option>
+                <option value="blues">Blues</option>
+                <option value="country">Country</option>
+                <option value="rock">Rock</option>
+                <option value="metal">Metal</option>
+            </select>
+        </div>
+        <br>
+        <div class="col-5 mx-auto text-center">
+
+            <button type="button" class="btn btn-danger bg-gradient col-5" onclick="rastgeleLinkGetir()">Rastgele Şarkı</button>
+
+        </div>
+
+    </form>
+
+
+
+
+    <br>
+    <br>
+
+
+
+
+
+
+
+</body>
+
+</html>
